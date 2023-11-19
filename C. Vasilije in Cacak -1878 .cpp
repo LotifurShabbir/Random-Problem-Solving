@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 #define MAX 1000006
 #define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 #define nline "\n"
