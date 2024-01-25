@@ -36,3 +36,18 @@ class Solution:
             num //= 10
 
         return count 
+# another approch from my side
+class Solution:
+    def trailingZeroes(self, n: int) -> int:
+        if n == 0:
+            return 0
+        def fact(x):
+            if x == 1:
+                return 1
+            return x * fact(x - 1)
+        nums = fact(n)
+        ans = 0
+        while nums % 10 == 0: #means last digit is 0
+            ans += 1
+            nums //= 10
+        return ans
