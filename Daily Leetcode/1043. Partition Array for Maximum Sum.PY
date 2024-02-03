@@ -1,4 +1,4 @@
-class Solution:
+class Solution:#ariyan mittal solution
     def maxSumAfterPartitioning(self, arr: List[int], k: int) -> int:
         
         n = len(arr)
