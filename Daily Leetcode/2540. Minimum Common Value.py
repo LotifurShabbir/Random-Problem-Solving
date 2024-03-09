@@ -18,3 +18,16 @@ class Solution:
         
 
         return -1
+    
+# AC Answer
+class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+        n1 = Counter(nums1)
+        n2 = Counter(nums2)
+        
+        for key in n1.keys():
+            if key in n2:
+                return key
+
+        return -1
+
