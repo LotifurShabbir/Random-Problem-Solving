@@ -6,6 +6,4 @@
 #         self.right = right
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        if self.val.left == self.val.right:
-            return True
-        return False
+        return str(p) == str(q)
